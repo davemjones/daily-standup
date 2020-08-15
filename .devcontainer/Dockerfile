@@ -15,10 +15,10 @@ RUN curl -o /tmp/.git-prompt.sh \
 RUN echo 'source /tmp/.git-prompt.sh' >> /root/.bashrc
 
 # Install npm packages globally
-RUN npm install -g http-server 
-RUN npm install -g ngrok --unsafe-perm=true --allow-root
-COPY ./ngrok-authtoken.txt /tmp 
-RUN ngrok authtoken | cat /tmp/ngrok-authtoken.txt
+# RUN npm install -g http-server 
+# RUN npm install -g ngrok --unsafe-perm=true --allow-root
+# COPY ./ngrok-authtoken.txt /tmp 
+# RUN ngrok authtoken | cat /tmp/ngrok-authtoken.txt
 
 # ** [Optional] Uncomment this section to install additional packages. **
 #
